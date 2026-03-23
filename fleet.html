@@ -3,81 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Fleet - Blue Collar Drones</title>
+    <title>The Fleet - Lab Prototypes</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+        body { font-family: 'JetBrains Mono', monospace; }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans">
-    <nav class="flex items-center justify-between p-6 bg-white shadow-sm">
-        <div class="text-2xl font-bold tracking-tighter text-blue-800">BLUE COLLAR <span class="text-slate-500">DRONES</span></div>
+<body class="bg-zinc-50 text-zinc-900">
+    <nav class="flex items-center justify-between p-6 bg-zinc-900 text-white border-b-4 border-orange-500">
+        <div class="text-xl font-bold uppercase">[BCD] Lab_v2.6</div>
         <div class="space-x-8 font-medium">
-            <a href="index.html" class="hover:text-blue-700">Home</a>
-            <a href="services.html" class="hover:text-blue-700">Services</a>
-            <a href="quote.html" class="bg-blue-800 text-white px-5 py-2 rounded-md hover:bg-blue-900 transition">Get a Quote</a>
+            <a href="index.html" class="hover:text-orange-400">01_Home</a>
+            <a href="services.html" class="hover:text-orange-400">02_Services</a>
+            <a href="fleet.html" class="text-orange-500 underline">03_Fleet</a>
         </div>
     </nav>
 
-    <header class="bg-gradient-to-r from-blue-800 to-blue-600 py-16 text-white text-center">
-        <h1 class="text-5xl font-extrabold mb-4">The Fleet</h1>
-        <p class="text-xl">State-of-the-art drone technology for professional operations</p>
+    <header class="bg-zinc-800 py-16 text-white text-center border-b border-zinc-700">
+        <h1 class="text-4xl font-black mb-2 uppercase italic">Active Fleet_Prototypes</h1>
+        <p class="text-orange-500 uppercase tracking-widest text-sm font-bold">In-House Engineering & Assembly</p>
     </header>
 
     <section class="py-20 px-6 max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 text-center border-b-4 border-blue-800 w-fit mx-auto pb-2">Our Drone Fleet</h2>
-        
         <div class="grid md:grid-cols-2 gap-10">
-            <div class="bg-white p-8 border-t-4 border-blue-800 shadow-lg rounded">
-                <h3 class="text-2xl font-bold mb-4">DJI Matrice 300 RTK</h3>
-                <p class="text-slate-600 mb-4">Professional-grade thermal and optical drone for industrial inspections.</p>
-                <ul class="list-disc list-inside text-slate-600">
-                    <li>45-minute flight time</li>
-                    <li>7km transmission range</li>
-                    <li>Thermal imaging capability</li>
-                    <li>IP45 weather resistance</li>
-                </ul>
+            <div class="bg-white border-2 border-zinc-800 p-0 overflow-hidden">
+                <div class="bg-zinc-800 text-white p-4 font-bold flex justify-between">
+                    <span>UNIT_01: "THE MASON"</span>
+                    <span class="text-orange-500">V4.2</span>
+                </div>
+                <div class="p-8">
+                    <p class="text-zinc-600 mb-6 italic">Custom Carbon-Fiber PETG frame designed for high-heat industrial furnace inspections.</p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between border-b border-zinc-100 py-1"><span>PAYLOAD:</span> <b>Thermal/HD</b></div>
+                        <div class="flex justify-between border-b border-zinc-100 py-1"><span>FLIGHT_TIME:</span> <b>38 MIN</b></div>
+                        <div class="flex justify-between border-b border-zinc-100 py-1"><span>CHASSIS:</span> <b>3D-Printed Composite</b></div>
+                    </div>
+                </div>
             </div>
 
-            <div class="bg-white p-8 border-t-4 border-blue-800 shadow-lg rounded">
-                <h3 class="text-2xl font-bold mb-4">Freefly Alta X</h3>
-                <p class="text-slate-600 mb-4">Heavy-lift cargo drone for transport and specialized operations.</p>
-                <ul class="list-disc list-inside text-slate-600">
-                    <li>55 lbs maximum payload</li>
-                    <li>25-minute flight time</li>
-                    <li>Advanced stability systems</li>
-                    <li>Multi-sensor integration</li>
-                </ul>
-            </div>
-
-            <div class="bg-white p-8 border-t-4 border-blue-800 shadow-lg rounded">
-                <h3 class="text-2xl font-bold mb-4">Pix4D Mapper Drone</h3>
-                <p class="text-slate-600 mb-4">Precision mapping and orthomosaic generation for site surveys.</p>
-                <ul class="list-disc list-inside text-slate-600">
-                    <li>4K RGB camera</li>
-                    <li>30-minute flight time</li>
-                    <li>Centimeter-level accuracy</li>
-                    <li>Real-time data processing</li>
-                </ul>
-            </div>
-
-            <div class="bg-white p-8 border-t-4 border-blue-800 shadow-lg rounded">
-                <h3 class="text-2xl font-bold mb-4">Yuneec H520E</h3>
-                <p class="text-slate-600 mb-4">Compact drone for rapid deployment and utility inspections.</p>
-                <ul class="list-disc list-inside text-slate-600">
-                    <li>42-minute flight time</li>
-                    <li>5-camera payload</li>
-                    <li>Reliable and fast deployment</li>
-                    <li>Enterprise-grade reliability</li>
-                </ul>
+            <div class="bg-white border-2 border-zinc-800 p-0 overflow-hidden">
+                <div class="bg-zinc-800 text-white p-4 font-bold flex justify-between">
+                    <span>UNIT_02: "ATLAS-LIFT"</span>
+                    <span class="text-orange-500">BETA</span>
+                </div>
+                <div class="p-8">
+                    <p class="text-zinc-600 mb-6 italic">Heavy-lift student project for transporting specialized tools to rooftop worksites.</p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between border-b border-zinc-100 py-1"><span>MAX_LIFT:</span> <b>12.5 KG</b></div>
+                        <div class="flex justify-between border-b border-zinc-100 py-1"><span>POWER:</span> <b>Dual-Battery 6S</b></div>
+                        <div class="flex justify-between border-b border-zinc-100 py-1"><span>SAFETY:</span> <b>Parachute Deploy</b></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-slate-900 text-white py-16 text-center">
-        <h2 class="text-3xl font-bold mb-4">Ready to see our fleet in action?</h2>
-        <a href="quote.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-md transition">Request a Quote</a>
-    </section>
-
-    <footer class="py-6 text-center text-slate-400 text-sm">
-        &copy; 2026 Blue Collar Drones. All Rights Reserved.
-    </footer>
+    <div class="text-center pb-20">
+        <a href="quote.html" class="bg-orange-600 text-white font-bold py-4 px-12 uppercase border-b-4 border-orange-800">Initiate_Project_Request</a>
+    </div>
 </body>
 </html>
