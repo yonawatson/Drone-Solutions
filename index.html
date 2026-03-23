@@ -3,73 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blue Collar Drones | Industrial Aerial Solutions</title>
+    <title>Blue Collar Drones | Student-Led Custom Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .hero-gradient {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&q=80');
-            background-size: cover;
-            background-position: center;
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+        body { font-family: 'JetBrains Mono', monospace; }
+        .grid-bg {
+            background-image: radial-gradient(#fb923c 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans">
-
-    <nav class="flex items-center justify-between p-6 bg-white shadow-sm">
-        <div class="text-2xl font-bold tracking-tighter text-blue-800">BLUE COLLAR <span class="text-slate-500">DRONES</span></div>
-        <div class="space-x-8 font-medium">
-            
-            
-            
-            <!-- Navigation Links -->
-            <a href="services.html" class="hover:text-blue-700">Services</a>
-            <a href="fleet.html" class="hover:text-blue-700">The Fleet</a>
-            <a href="quote.html" class="bg-blue-800 text-white px-5 py-2 rounded-md hover:bg-blue-900 transition">Get a Quote</a>
-
-            <!-- View Projects Button (change from <button> to <a>) -->
-            <a href="fleet.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-sm uppercase tracking-widest transition">View Projects</a>
-            
-            
-            
-            
+<body class="bg-zinc-50 text-zinc-900">
+    <nav class="flex items-center justify-between p-6 bg-zinc-900 text-white border-b-4 border-orange-500">
+        <div class="text-xl font-bold tracking-tighter uppercase">
+            [<span class="text-orange-500">BCD</span>] Lab_v2.6
+        </div>
+        <div class="hidden md:flex space-x-8 items-center">
+            <a href="index.html" class="text-orange-500 underline">01_Home</a>
+            <a href="services.html" class="hover:text-orange-400 transition">02_Services</a>
+            <a href="fleet.html" class="hover:text-orange-400 transition">03_Fleet</a>
+            <a href="quote.html" class="bg-orange-600 text-white px-4 py-2 font-bold hover:bg-orange-500 transition">REQUEST_QUOTE</a>
         </div>
     </nav>
 
-    <header class="hero-gradient h-[70vh] flex items-center justify-center text-center text-white px-4">
-        <div>
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 uppercase italic">Precision from Above</h1>
-            <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-8 font-light">Delivering industrial-grade data and inspections for the trades that build the world.</p>
-            <button class="bg-blue-600...">View Projects</button>
+    <header class="relative bg-zinc-900 py-24 px-6 overflow-hidden border-b border-orange-900/30">
+        <div class="absolute inset-0 opacity-10 grid-bg"></div>
+        <div class="relative z-10 max-w-4xl mx-auto text-center">
+            <div class="inline-block border border-orange-500 text-orange-500 px-3 py-1 text-xs mb-6 animate-pulse">
+                STATUS: PROTOTYPING_ACTIVE
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black text-white mb-6 leading-none italic uppercase">
+                Custom Built <br><span class="text-orange-500">For The Trades.</span>
+            </h1>
+            <p class="text-zinc-400 text-lg mb-10 max-w-2xl mx-auto">
+                We are a university-based engineering collective building specialized, 3D-printed drone hardware for industrial applications.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="fleet.html" class="bg-orange-600 hover:bg-orange-500 text-white font-bold py-4 px-10 transition border-b-4 border-orange-800 active:border-b-0">
+                    VIEW_PROTOTYPES
+                </a>
+                <a href="services.html" class="border border-zinc-700 hover:bg-zinc-800 text-white font-bold py-4 px-10 transition">
+                    OUR_PROCESS
+                </a>
+            </div>
         </div>
     </header>
 
     <section class="py-20 px-6 max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 text-center border-b-4 border-blue-800 w-fit mx-auto pb-2">Core Services</h2>
-        <div class="grid md:grid-cols-3 gap-10">
-            <div class="bg-white p-8 border-t-4 border-blue-800 shadow-lg">
-                <h3 class="text-xl font-bold mb-4">Industrial Inspection</h3>
-                <p class="text-slate-600">Close-up HD and Thermal inspections of towers, bridges, and roofs without the need for scaffolding.</p>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="border-2 border-zinc-200 p-8 hover:border-orange-500 transition group">
+                <div class="text-orange-500 font-bold mb-2">01/</div>
+                <h3 class="text-xl font-bold mb-4 uppercase">Rapid Prototyping</h3>
+                <p class="text-zinc-600">Custom 3D-printed chassis and mounts designed for specific tools and sensors.</p>
             </div>
-            <div class="bg-white p-8 border-t-4 border-blue-800 shadow-lg">
-                <h3 class="text-xl font-bold mb-4">Site Mapping</h3>
-                <p class="text-slate-600">High-accuracy 2D orthomosaics and 3D models for construction progress and stockpile volume checks.</p>
+            <div class="border-2 border-zinc-200 p-8 hover:border-orange-500 transition">
+                <div class="text-orange-500 font-bold mb-2">02/</div>
+                <h3 class="text-xl font-bold mb-4 uppercase">Trade Integration</h3>
+                <p class="text-zinc-600">Drones built specifically for roofing, masonry, and electrical grid monitoring.</p>
             </div>
-            <div class="bg-white p-8 border-t-4 border-blue-800 shadow-lg">
-                <h3 class="text-xl font-bold mb-4">Utility & Energy</h3>
-                <p class="text-slate-600">Efficient solar panel inspections and power line monitoring to keep the grid running smoothly.</p>
+            <div class="border-2 border-zinc-200 p-8 hover:border-orange-500 transition">
+                <div class="text-orange-500 font-bold mb-2">03/</div>
+                <h3 class="text-xl font-bold mb-4 uppercase">Student-Led Lab</h3>
+                <p class="text-zinc-600">Cutting edge research meeting real-world utility. FAA Part 107 Certified.</p>
             </div>
         </div>
     </section>
 
-    <section class="bg-slate-900 text-white py-16 text-center">
-        <h2 class="text-3xl font-bold mb-4">Ready to put us to work?</h2>
-        <p class="mb-8 opacity-80">Based in the heart of the industry. FAA Part 107 Certified.</p>
-        <a href="mailto:info@bluecollardrones.com" class="text-2xl font-bold border-b-2 border-blue-400 hover:text-blue-400">info@bluecollardrones.com</a>
-    </section>
-
-    <footer class="py-6 text-center text-slate-400 text-sm">
-        &copy; 2026 Blue Collar Drones. All Rights Reserved.
+    <footer class="bg-zinc-900 text-zinc-500 py-12 px-6 border-t-4 border-orange-600">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <p>&copy; 2026 BLUE COLLAR DRONES LAB. [EST 2024]</p>
+            <a href="mailto:lab@university.edu" class="text-orange-500 hover:underline mt-4 md:mt-0">lab@university.edu</a>
+        </div>
     </footer>
-
 </body>
 </html>
