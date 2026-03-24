@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Watson Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-slate-900">
+
+    <nav class="border-b border-slate-200 py-6 px-8 flex justify-between items-center bg-white sticky top-0 z-50">
+        <div class="text-xl font-800 tracking-tighter uppercase">Watson <span class="text-slate-400">Lab</span></div>
+        <div class="hidden md:flex space-x-10 text-xs font-semibold uppercase tracking-widest">
+            <a href="index.html" class="hover:text-slate-400 transition">01 Home</a>
+            <a href="painting-drone.html" class="hover:text-slate-400 transition">02 Painting Drone</a>
+            <a href="dev-log.html" class="hover:text-slate-400 transition">03 Dev Log</a>
+            <a href="contact.html" class="text-slate-900 border-b border-slate-900">04 Contact</a>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-8 py-20 flex flex-col md:flex-row gap-20">
+        
+        <div class="md:w-1/3">
+            <h1 class="text-5xl font-800 uppercase tracking-tighter mb-8">Let's Connect.</h1>
+            <p class="text-slate-500 mb-10 leading-relaxed">
+                Interested in our trade solutions or investment opportunities? Reach out to the lab directly.
+            </p>
+            
+            <div class="space-y-4">
+                <h3 class="font-bold uppercase text-[10px] tracking-widest text-slate-400">Direct Uplink</h3>
+                <a href="mailto:yonawatson@icloud.com" class="text-xl font-semibold text-slate-900 border-b-2 border-slate-900 pb-1">yonawatson@icloud.com</a>
+            </div>
+        </div>
+
+        <div class="md:w-2/3">
+            <form action="#" class="space-y-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="flex flex-col">
+                        <label class="uppercase text-[10px] font-bold tracking-widest mb-2">Name</label>
+                        <input type="text" class="border-b border-slate-200 py-2 focus:border-slate-900 outline-none transition" placeholder="John Doe">
+                    </div>
+                    <div class="flex flex-col">
+                        <label class="uppercase text-[10px] font-bold tracking-widest mb-2">Organization</label>
+                        <input type="text" class="border-b border-slate-200 py-2 focus:border-slate-900 outline-none transition" placeholder="Trade Firm Inc.">
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <label class="uppercase text-[10px] font-bold tracking-widest mb-2">Message</label>
+                    <textarea rows="4" class="border-b border-slate-200 py-2 focus:border-slate-900 outline-none transition resize-none" placeholder="How can we help?"></textarea>
+                </div>
+                <button type="submit" class="bg-slate-900 text-white px-12 py-4 font-bold uppercase tracking-widest text-xs hover:bg-slate-700 transition">Send Transmission</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
