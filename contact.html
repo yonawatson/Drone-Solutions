@@ -29,30 +29,51 @@
             
             <div class="space-y-4">
                 <h3 class="font-bold uppercase text-[10px] tracking-widest text-slate-400">Direct Uplink</h3>
-                <a href="mailto:yonawatson@icloud.com" class="text-xl font-semibold text-slate-900 border-b-2 border-slate-900 pb-1">yonawatson@icloud.com</a>
+                <a href="mailto:yonawatson@icloud.com" class="text-xl font-semibold text-slate-900 border-b-2 border-slate-900 pb-1 italic">yonawatson@icloud.com</a>
             </div>
         </div>
 
         <div class="md:w-2/3">
-            <form action="#" class="space-y-8">
+            <form action="https://formspree.io/f/yonawatson@icloud.com" method="POST" class="space-y-8">
+                
+                <input type="hidden" name="_next" value="https://YOUR-GITHUB-USERNAME.github.io/success.html">
+                
+                <input type="hidden" name="_subject" value="New Inquiry: Watson Engineering Lab">
+
                 <div class="grid md:grid-cols-2 gap-8">
                     <div class="flex flex-col">
                         <label class="uppercase text-[10px] font-bold tracking-widest mb-2">Name</label>
-                        <input type="text" class="border-b border-slate-200 py-2 focus:border-slate-900 outline-none transition" placeholder="John Doe">
+                        <input type="text" name="visitor_name" required class="border-b border-slate-200 py-2 focus:border-slate-900 outline-none transition" placeholder="John Doe">
                     </div>
+
                     <div class="flex flex-col">
                         <label class="uppercase text-[10px] font-bold tracking-widest mb-2">Organization</label>
-                        <input type="text" class="border-b border-slate-200 py-2 focus:border-slate-900 outline-none transition" placeholder="Trade Firm Inc.">
+                        <input type="text" name="company_name" class="border-b border-slate-200 py-2 focus:border-slate-900 outline-none transition" placeholder="Trade Firm Inc.">
                     </div>
                 </div>
+
+                <div class="flex flex-col">
+                    <label class="uppercase text-[10px] font-bold tracking-widest mb-2">Your Email Address</label>
+                    <input type="email" name="email" required class="border-b border-slate-200 py-2 focus:border-slate-900 outline-none transition" placeholder="email@example.com">
+                </div>
+
                 <div class="flex flex-col">
                     <label class="uppercase text-[10px] font-bold tracking-widest mb-2">Message</label>
-                    <textarea rows="4" class="border-b border-slate-200 py-2 focus:border-slate-900 outline-none transition resize-none" placeholder="How can we help?"></textarea>
+                    <textarea name="message" rows="4" required class="border-b border-slate-200 py-2 focus:border-slate-900 outline-none transition resize-none" placeholder="How can we help?"></textarea>
                 </div>
-                <button type="submit" class="bg-slate-900 text-white px-12 py-4 font-bold uppercase tracking-widest text-xs hover:bg-slate-700 transition">Send Transmission</button>
+
+                <button type="submit" class="bg-slate-900 text-white px-12 py-4 font-bold uppercase tracking-widest text-xs hover:bg-slate-700 transition">
+                    Send Transmission
+                </button>
             </form>
         </div>
     </main>
+
+    <footer class="bg-white border-t border-slate-100 py-12 px-8">
+        <div class="max-w-7xl mx-auto text-[10px] tracking-[0.3em] uppercase text-slate-400">
+            &copy; 2026 Watson Engineering Lab / Trade Systems Division
+        </div>
+    </footer>
 
 </body>
 </html>
