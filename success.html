@@ -6,24 +6,49 @@
     <title>Transmission Received | Watson Lab</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <style>body { font-family: 'Inter', sans-serif; }</style>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
 <body class="bg-white text-slate-900">
 
-    <nav class="border-b border-slate-200 py-6 px-8 flex justify-between items-center bg-white">
+    <nav class="border-b border-slate-200 py-6 px-8 flex justify-between items-center bg-white sticky top-0 z-50">
         <div class="text-xl font-800 tracking-tighter uppercase">Watson <span class="text-slate-400">Lab</span></div>
+        <div class="hidden md:flex space-x-10 text-xs font-semibold uppercase tracking-widest">
+            <a href="index.html" class="hover:text-slate-400 transition">01 Home</a>
+            <a href="painting-drone.html" class="hover:text-slate-400 transition">02 Painting Drone</a>
+            <a href="dev-log.html" class="hover:text-slate-400 transition">03 Dev Log</a>
+            <a href="contact.html" class="hover:text-slate-400 transition">04 Contact</a>
+        </div>
     </nav>
 
-    <main class="max-w-7xl mx-auto px-8 py-32 text-center">
-        <div class="inline-block border-2 border-slate-900 p-4 mb-8">
-            <svg class="w-12 h-12 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <main class="max-w-7xl mx-auto px-8 py-32 flex flex-col items-center text-center">
+        
+        <div class="mb-12 inline-block border-2 border-slate-900 p-6">
+            <svg class="w-12 h-12 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 13l4 4L19 7"></path>
             </svg>
         </div>
-        <h1 class="text-4xl font-800 uppercase tracking-tighter mb-4">Transmission Received</h1>
-        <p class="text-slate-500 max-w-md mx-auto mb-10">Your inquiry has been logged. Our engineering team will review the details and respond via your provided email shortly.</p>
-        <a href="index.html" class="bg-slate-900 text-white px-10 py-4 font-bold uppercase tracking-widest text-xs hover:bg-slate-700 transition">Return to Workshop</a>
+
+        <h1 class="text-5xl font-800 uppercase tracking-tighter mb-6 leading-none italic">
+            Transmission <span class="text-slate-400 font-300">Received.</span>
+        </h1>
+        
+        <p class="max-w-md text-slate-500 text-lg font-light leading-relaxed mb-12">
+            Your inquiry has been successfully logged in our system. A member of the engineering team will review your message and reach out via your provided email shortly.
+        </p>
+
+        <a href="index.html" class="bg-slate-900 text-white px-12 py-4 font-bold uppercase tracking-widest text-xs hover:bg-slate-700 transition">
+            Return to Workshop
+        </a>
     </main>
+
+    <footer class="fixed bottom-0 w-full bg-white border-t border-slate-100 py-8 px-8">
+        <div class="max-w-7xl mx-auto text-[10px] tracking-[0.3em] uppercase text-slate-400 flex justify-between">
+            <span>&copy; 2026 Watson Engineering Lab</span>
+            <span>Status: Transmission Logged</span>
+        </div>
+    </footer>
 
 </body>
 </html>
