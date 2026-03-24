@@ -36,15 +36,14 @@
         <div class="md:w-2/3">
             <form action="https://formspree.io/f/xvzvpzro" method="POST" class="space-y-8">
                 
-                <input type="hidden" name="_next" value="https://yonawatson.github.io/success.html">
-                
-                <input type="hidden" name="_subject" value="New Inquiry: Watson Engineering Lab">
+                <input type="hidden" name="_subject" value="New Engineering Inquiry - Watson Lab">
 
                 <div class="grid md:grid-cols-2 gap-8">
                     <div class="flex flex-col">
-                        <label class="uppercase text-[10px] font-bold tracking-widest mb-2">Name</label>
+                        <label class="uppercase text-[10px] font-bold tracking-widest mb-2">Full Name</label>
                         <input type="text" name="name" required class="border-b border-slate-200 py-2 focus:border-slate-900 outline-none transition" placeholder="John Doe">
                     </div>
+
                     <div class="flex flex-col">
                         <label class="uppercase text-[10px] font-bold tracking-widest mb-2">Organization</label>
                         <input type="text" name="organization" class="border-b border-slate-200 py-2 focus:border-slate-900 outline-none transition" placeholder="Trade Firm Inc.">
@@ -52,7 +51,7 @@
                 </div>
 
                 <div class="flex flex-col">
-                    <label class="uppercase text-[10px] font-bold tracking-widest mb-2">Your Email</label>
+                    <label class="uppercase text-[10px] font-bold tracking-widest mb-2">Email Address</label>
                     <input type="email" name="email" required class="border-b border-slate-200 py-2 focus:border-slate-900 outline-none transition" placeholder="email@example.com">
                 </div>
 
@@ -61,7 +60,7 @@
                     <textarea name="message" rows="4" required class="border-b border-slate-200 py-2 focus:border-slate-900 outline-none transition resize-none" placeholder="How can we help?"></textarea>
                 </div>
 
-                <button type="submit" class="bg-slate-900 text-white px-12 py-4 font-bold uppercase tracking-widest text-xs hover:bg-slate-700 transition border-sharp">
+                <button type="submit" class="bg-slate-900 text-white px-12 py-4 font-bold uppercase tracking-widest text-xs hover:bg-slate-700 transition">
                     Send Transmission
                 </button>
             </form>
